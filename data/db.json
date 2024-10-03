@@ -1,0 +1,65 @@
+{
+    "totalSales": {
+      "currentMonth": 12000,
+      "previousMonth": 9500,
+      "growthRate": 0.26
+    },
+
+
+    "userGrowth": {
+      "labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"],
+      "data": [150, 200, 250, 300, 400, 450, 500, 550, 600, 650]
+    },
+
+
+    "revenueBreakdown": {
+      "categories": [
+        {
+          "category": "Product A",
+          "revenue": 5000
+        },
+        {
+          "category": "Product B",
+          "revenue": 3500
+        },
+        {
+          "category": "Product C",
+          "revenue": 2500
+        }
+      ]
+    },
+
+
+    "recentActivity": [
+      {
+        "id": 1,
+        "timestamp": "2024-09-28T10:15:30Z",
+        "description": "New sale for Product A",
+        "amount": 1200
+      },
+      {
+        "id": 2,
+        "timestamp": "2024-09-29T14:20:45Z",
+        "description": "Refund for Product B",
+        "amount": -300
+      },
+      {
+        "id": 3,
+        "timestamp": "2024-09-30T08:45:10Z",
+        "description": "New sign-up",
+        "amount": 0
+      }
+    ],
+
+
+    "filters": {
+      "dateRange": {
+        "start": "2024-09-01",
+        "end": "2024-09-30"
+      },
+      "categories": ["Product A", "Product B", "Product C"]
+    },
+    "loading": true,
+    "darkMode": false
+  }
+  
