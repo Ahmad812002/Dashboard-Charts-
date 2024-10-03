@@ -1,0 +1,183 @@
+/* Dashboard container */
+.dashboard {
+    padding: 1rem; /* Mobile */
+  }
+  
+  @media (min-width: 640px) {
+    .dashboard {
+      padding: 1.5rem; /* Small screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .dashboard {
+      padding: 2rem; /* Medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .dashboard {
+      padding: 2.5rem; /* Large screens */
+    }
+  }
+  
+  /* Background and text colors */
+  .dashboard-light {
+    background-color: #ffffff; /* Light mode background */
+    color: #333333; /* Light mode text */
+  }
+  
+  .dashboard-dark {
+    background-color: #1e1e2f; /* Dark mode background */
+    color: #f5f5f5; /* Dark mode text */
+  }
+  
+  /* Title */
+  .title {
+    text-align: center;
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Space below the title */
+  }
+  
+  /* Select dropdown */
+  .form-select {
+    width: 60%; /* Increased width for comfort */
+    max-width: 300px; /* Max width for larger screens */
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db; /* Light border */
+    background-color: #f9fafb; /* Light background */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+    margin: 0 auto; /* Center alignment */
+    display: block; /* Display block for centering */
+  }
+  
+  .form-select:focus {
+    outline: none;
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25); /* Focus shadow */
+  }
+  
+  /* Chart container */
+  .chart-container {
+    width: 100%;              /* Full width */
+    height: 20rem;           /* Set height to a more suitable size */
+    max-width: 32rem;        /* Max width */
+    margin: 0 auto;          /* Center alignment */
+    border-radius: 0.5rem;   /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    overflow: visible;       /* Allow overflow for visibility */
+    position: relative;      /* Ensure relative positioning for children */
+  }
+  
+  
+  
+  /* Loading state */
+  .loading {
+    text-align: center;
+    font-size: 1.25rem; 
+    font-weight: 600;
+    color: #888888; /* Loading text color */
+  }
+  
+
+  .dashboard {
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-light {
+    background-color: white;
+    color: black;
+  }
+  
+  .dashboard-dark {
+    background-color: #121212;
+    color: white;
+  }
+  
+  /* Responsive styles for the title */
+  .title {
+    flex: 1; /* Allow the title to grow */
+    text-align: center; /* Center the title */
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+  }
+  
+
+
+  button {
+    font-size: 1rem; /* Adjust the font size */
+    cursor: pointer; /* Show pointer cursor */
+    display: inline-block;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+  }
+
+
+
+  /* Select dropdown */
+.form-select {
+  width: 60%; /* Increased width for comfort */
+  max-width: 300px; /* Max width for larger screens */
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db; /* Light border */
+  background-color: #f9fafb; /* Light background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+  margin: 0 auto; /* Center alignment */
+  display: block; /* Display block for centering */
+  color: #333333; /* Light mode text color */
+}
+
+/* Dark mode styles for select dropdown */
+.dashboard-dark .form-select {
+  border: 1px solid #444; /* Dark border */
+  background-color: #2a2a2a; /* Dark background */
+  color: #f5f5f5; /* Dark mode text color */
+}
+
+/* Focus state for form select */
+.form-select:focus {
+  outline: none;
+  border-color: #3b82f6; /* Blue border on focus */
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25); /* Focus shadow */
+}
+
+/* Dark mode focus state for form select */
+.dashboard-dark .form-select:focus {
+  border-color: #3b82f6; /* Keep blue border on focus for dark mode */
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25); /* Keep focus shadow */
+  ;
+}
+
+
+/* Loading container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height for centering */
+}
+
+/* Loading icon */
+.loading-icon {
+  width: 50px; /* Set a size for your spinner */
+  height: 50px; /* Set a size for your spinner */
+  animation: spin 1s linear infinite; /* Animation properties */
+}
+
+/* Animation for spinning effect */
+@keyframes spin {
+  0% {
+      transform: rotate(0deg); /* Starting rotation */
+  }
+  100% {
+      transform: rotate(360deg); /* Ending rotation */
+  }
+}
